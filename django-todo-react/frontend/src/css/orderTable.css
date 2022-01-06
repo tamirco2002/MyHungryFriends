@@ -1,0 +1,305 @@
+
+
+
+/*//////////////////////////////////////////////////////////////////
+[ FONT ]*/
+
+
+/*@font-face {
+  font-family: OpenSans-Regular;
+  src: url('../fonts/OpenSans/OpenSans-Regular.ttf'); 
+}*/
+
+
+
+/*//////////////////////////////////////////////////////////////////
+[ RESTYLE TAG ]*/
+
+
+.OrderPage * {
+	margin: 0px; 
+	padding: 0px; 
+	box-sizing: border-box;
+}
+
+.OrderPage body, html {
+	height: 100%;
+	font-family: sans-serif;
+}
+
+/* ------------------------------------ */
+.OrderPage a {
+	margin: 0px;
+	transition: all 0.4s;
+	-webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+}
+
+.OrderPage a:focus {
+	outline: none !important;
+}
+
+.OrderPage a:hover {
+	text-decoration: none;
+}
+
+/* ------------------------------------ */
+.OrderPage h1,h2,h3,h4,h5,h6 {margin: 0px;}
+
+.OrderPage p {margin: 0px;}
+
+.OrderPage ul, li {
+	margin: 0px;
+	list-style-type: none;
+}
+
+
+/* ------------------------------------ */
+.OrderPage input {
+  display: block;
+	outline: none;
+	border: none !important;
+}
+
+.OrderPage textarea {
+  display: block;
+  outline: none;
+}
+
+.OrderPage textarea:focus, input:focus {
+  border-color: transparent !important;
+}
+
+/* ------------------------------------ */
+.OrderPage button {
+	outline: none !important;
+	border: none;
+	background: transparent;
+}
+
+.OrderPage button:hover {
+	cursor: pointer;
+}
+
+.OrderPage iframe {
+	border: none !important;
+}
+
+
+
+
+/*//////////////////////////////////////////////////////////////////
+[ Utiliti ]*/
+
+
+
+
+
+
+/*//////////////////////////////////////////////////////////////////
+[ Table ]*/
+
+.OrderPage .limiter {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.OrderPage .container-table100 {
+  width: 100%;
+  min-height: 100vh;
+  /*background: #f8f7f8;
+  background: -webkit-linear-gradient(45deg, #4158d0, #c850c0);
+  background: -o-linear-gradient(45deg, #4158d0, #c850c0);
+  background: -moz-linear-gradient(45deg, #4158d0, #c850c0);
+  background: linear-gradient(45deg, #4158d0, #c850c0);*/
+
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: top;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 33px 30px;
+}
+
+.OrderPage .wrap-table100 {
+  width: 1170px;
+}
+
+.OrderPage table {
+  border-spacing: 1;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+.OrderPage table * {
+  position: relative;
+}
+.OrderPage table td, table th {
+  padding-left: 8px;
+}
+.OrderPage table thead tr {
+  height: 60px;
+  background: #2c79dd;
+
+}
+.OrderPage table tbody tr {
+  height: 50px;
+}
+.OrderPage table tbody tr:last-child {
+  border: 0;
+}
+.OrderPage table td, table th {
+  text-align: left;
+}
+.OrderPage table td.l, table th.l {
+  text-align: right;
+}
+.OrderPage table td.c, table th.c {
+  text-align: center;
+}
+.OrderPage table td.r, table th.r {
+  text-align: center;
+}
+
+
+.OrderPage .table100-head th{
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 18px;
+  color: #fff;
+  line-height: 1.2;
+  font-weight: unset;
+}
+
+.OrderPage tbody tr:nth-child(even) {
+  background-color: #f5f5f5;
+}
+
+.OrderPage tbody tr {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 15px;
+  color: #808080;
+  line-height: 1.2;
+  font-weight: unset;
+}
+
+.OrderPage tbody tr:hover {
+  color: #555555;
+  background-color: #f5f5f5;
+  cursor: pointer;
+}
+
+.OrderPage .column1 {
+  width: 260px;
+  padding-left: 40px;
+}
+
+.OrderPage .column2 {
+  width: 160px;
+}
+
+.OrderPage .column3 {
+  width: 245px;
+}
+
+.OrderPage .column4 {
+  width: 110px;
+  text-align: right;
+}
+
+.OrderPage .column5 {
+  width: 170px;
+  text-align: right;
+}
+
+.OrderPage .column6 {
+  width: 222px;
+  text-align: right;
+  padding-right: 62px;
+}
+
+
+@media screen and (max-width: 992px) {
+  .OrderPage table {
+    display: block;
+  }
+  .OrderPage table > *, table tr, table td, table th {
+    display: block;
+  }
+  .OrderPage table thead {
+    display: none;
+  }
+  .OrderPage table tbody tr {
+    height: auto;
+    padding: 37px 0;
+  }
+  .OrderPage table tbody tr td {
+    padding-left: 40% !important;
+    margin-bottom: 24px;
+  }
+  .OrderPage table tbody tr td:last-child {
+    margin-bottom: 0;
+  }
+  .OrderPage table tbody tr td:before {
+    font-family: OpenSans-Regular;
+    font-size: 14px;
+    color: #999999;
+    line-height: 1.2;
+    font-weight: unset;
+    position: absolute;
+    width: 40%;
+    left: 30px;
+    top: 0;
+  }
+  .OrderPage table tbody tr td:nth-child(1):before {
+    content: "Date";
+  }
+  .OrderPage table tbody tr td:nth-child(2):before {
+    content: "Order ID";
+  }
+  .OrderPage table tbody tr td:nth-child(3):before {
+    content: "Name";
+  }
+  .OrderPage table tbody tr td:nth-child(4):before {
+    content: "Price";
+  }
+  .OrderPage table tbody tr td:nth-child(5):before {
+    content: "Quantity";
+  }
+  .OrderPage table tbody tr td:nth-child(6):before {
+    content: "Total";
+  }
+
+  .OrderPage .column4,
+  .column5,
+  .column6 {
+    text-align: left;
+  }
+
+  .OrderPage .column4,
+  .column5,
+  .column6,
+  .column1,
+  .column2,
+  .column3 {
+    width: 100%;
+  }
+
+  .OrderPage tbody tr {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  .OrderPage .container-table100 {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}

@@ -1,0 +1,95 @@
+.Modal .body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+  }
+  
+  .Modal img {
+    max-width: 100%;
+    border-radius: 50%;
+    width:190px;
+    height:190px;
+     align-items: center;
+    border: 5px solid #3ba9f1;
+  }
+  
+  .Modal {
+    max-width: 200px;
+    background: grey;
+    padding: 2rem;
+    border-radius: 1rem;
+    transition: 1s;
+    align-items: center;
+    justify-content: center;
+}
+
+.Modal .modal__checkbox {
+      display: none;
+}
+.Modal .modal__checkbox div {
+        visibility: visible;
+        opacity: 1;
+      }
+    
+  
+.Modal .modal__title{
+      margin:0.2px;
+    }
+  
+    .Modal .modal__label {
+      text-decoration: underline;
+      cursor: pointer;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .Modal .modal__window {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.5);
+      transition: 1s;
+    }
+  
+    .Modal .modal__content {
+      max-width: 576px;
+      background: white;
+      position: absolute;
+      transform: translate(-50%, -50%);
+      top: 50%;
+      left: 50%;
+      padding: 2rem;
+      border-radius: 1rem;
+      border: 2px solid #293a42;
+    }
+    .Modal .modal__restbtn {
+    display: block;
+    background-color: #00a8ff;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        margin: auto;
+       width: 200px;
+       height: 50px;
+         border-radius: 1rem;
+         text-decoration: none;
+  
+    }
+  
+    .Modal #modal__close-icon {
+      cursor: pointer;
+      width: 1.5rem;
+      margin: 0 0.5rem;
+      position: absolute;
+      right: 0;
+      top: 0;
+      color: #657ced;
+    }
+  
+   
+  
